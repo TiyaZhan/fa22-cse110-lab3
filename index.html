@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Meeting Minutes #1</title>
+    <link rel="icon" type="image/png" href="/download.png">
+  </head>
+  <body>
+    <header>
+        <div>Meeting QuickGuide</div>
+        <span>Use these to navigate</span>
+        <nav>
+            <ul>
+            <li><a href="#Agenda">Agenda</a></li>
+            <li><a href="#Attendance List">Attendance List</a></li>
+            <li><a href="#Wrap Up">Wrap Up</a></li>
+            <li><a href="#Recoding and Image">Recoding and Image</a></li>
+            <li><a href="#Others">Others</a></li>
+            </ul>
+        </nav>
+        <h1>Pomodoro Timer First Brainstorm</h1>
+        <h3>
+            October 14, 2022</h3>
+        
+    </header>
+    <main>
+        <section>
+            <h2 id="Agenda">Agenda</h2>
+            <ol>
+                <li> brainstorming</li>
+                <li>check-ins</li>
+                <li> documentation</li>
+                <li> Pick a main theme</li>
+              
+            </ol>
+        </section>
+         <section>
+            <h2 id="Attendance List">Attendance List</h2>
+            <ol>
+                <li><input type="checkbox" /> William Wang</li>
+                <li><input type="checkbox" /> Tianay Zhan</li>
+                <li><input type="checkbox" /> Tom Potter</li>
+                <li><input type="checkbox" /> Matthew Baner</li>
+                <li><input type="checkbox" /> Elizabeth Gringer</li>
+                <li><input type="checkbox" /> Ron Weasley</li>
+            </ol>
+        </section>
+        <section>
+            <h2 id="Wrap Up">Wrap Up</h2>
+
+            <details>
+                <summary>
+                    <h3>Brainstorming Ideas</h3>
+                </summary>
+                <p>
+                    consider what user we are facing<br>
+                    consider what client we are dealing with <br>
+                    what to do if we face problem<br>
+                </p>
+            </details>
+            <hr>
+            <h3>Check-in details</h3>
+            <p>
+                The job for past project has been working pretty well. 
+                The main issue left are problem with <strong>database</strong>. <em>Need to contact the other server as soon as possible.</em>
+                The code to use is <i>Harry Potter</i>.
+            </p>
+            <hr>
+            <p>We talked about the possible theme that we might use for this project. 
+                Below shows the possible theme that we discussed and the one <b class="term">finally selected</b>  by us.
+            </p>
+
+            <fieldset>
+                <legend>Choose your favorite theme</legend>
+                <ul>
+                    <li><input type="radio" name = "theme"/> Black</li>
+                    <li><input type="radio" name = "theme"/> Yellow</li>
+                    <li><input type="radio" name = "theme"/> Blue</li>
+                    <li><input type="radio" name = "theme"/> Red</li>
+                    <li><input type="radio" name = "theme"/> Grey</li>
+                    <li><input type="radio" name = "theme"/> Green</li>
+                </ul>
+            </fieldset>
+            
+
+            <h3>Questions or Comments</h3>
+        </section>
+        <section>
+            <h2 id="Recoding and Image">Recoding and Image</h2>
+            <img
+            src="https://images.unsplash.com/photo-1611915387288-fd8d2f5f928b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2526&q=80"
+            alt="cat"
+            width="250"
+            />
+            <video controls width="250">
+                <source src="/sd1664047789-2.MP4"
+                        type="video/mp4">
+            
+            </video>
+            <audio controls>
+                <source src="/UC San Diego.mp3" type="audio/mpeg">
+               
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <h2 id="Others">Others</h2>
+        <p>Let's set the things that you want to discuss next time in the box below</p>
+        <form onsubmit="alert('Submitted')">
+            <input type="text" list = "possible-topic" placeholder="Enter Possible Topics" />
+            <datalist id = "possible-topic">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JAVASCRIPT</option>
+            </datalist>
+            <button>Submit</button>
+        </form>
+        <hr>
+        <p>Let's set up the next meeting time</p>
+        <form onsubmit="alert('Submitted')">
+            <input type="date"  />
+            <button>Submit</button>
+        </form>
+        <hr>
+        <p> Choose your favorite way to meet</p>
+        <select>
+            <option value="">--Please choose an option--</option>
+            <option value="zoom">Dog</option>
+            <option value="in-person">Cat</option>
+        </select>
+        <hr>
+        <p>If you have any question or concern, Enter in the below boxes</p>
+        <textarea>
+            Enter your question here...
+        </textarea>
+        <button>Submit</button>
+    </footer>
+   
+
+  </body>
+</html>
