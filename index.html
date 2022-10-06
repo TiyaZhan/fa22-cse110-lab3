@@ -107,7 +107,7 @@
     <footer>
         <h2 id="Others">Others</h2>
         <p>Let's set the things that you want to discuss next time in the box below</p>
-        <form onsubmit="alert('Submitted')">
+        <form>
             <input type="text" list = "possible-topic" placeholder="Enter Possible Topics" />
             <datalist id = "possible-topic">
                 <option>HTML</option>
@@ -118,7 +118,7 @@
         </form>
         <hr>
         <p>Let's set up the next meeting time</p>
-        <form onsubmit="alert('Submitted')">
+        <form>
             <input type="date"  />
             <button>Submit</button>
         </form>
@@ -131,10 +131,12 @@
         </select>
         <hr>
         <p>If you have any question or concern, Enter in the below boxes</p>
-        <textarea>
-            Enter your question here...
-        </textarea>
+       <form>
+            <textarea>
+                Enter your question here...
+            </textarea>
         <button>Submit</button>
+       </form>
     </footer>
    
 
