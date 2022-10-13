@@ -1,0 +1,137 @@
+/*background color
+set the margin of the page*/
+
+body{
+    background-color:rgba(251, 231, 247, 0.751);
+    
+    margin-left:1cm;
+    margin-right:10mm;
+    margin-top: 0.2in;
+
+    font-family: 'Alkalami', serif;
+}
+strong{
+    color :blue;
+}
+
+/*targeting the "date" h3 that are child of header elements*/
+header>h3{
+    color: #258;
+    
+}
+
+/*The title will disappear when the mouse move over*/
+h1:hover{
+    display:none;
+}
+
+a[href]{
+    text-decoration:underline;
+    padding-left: 2cm;
+}
+
+
+/*center the below titles*/
+#Agenda,
+#Attendance_List,
+#Wrap_Up,
+#Recording_and_Image,
+#Others{
+    text-align: center;
+    margin: auto;
+}
+
+/*Create and modify the border of this paragraph*/
+p.theme{
+
+    background-color: #258;
+    border-style: dotted;
+    border-color:aliceblue;
+    border-width: 1ex;
+    border-radius: 20em;
+    display:inline-block;
+    padding: 1cm 1cm 1cm 1cm;
+}
+
+fieldset + h3{
+    color:#258;
+    display: none;
+}
+
+body button:active{
+    color:rgb(235, 62, 62);
+}
+
+#Recording_and_Image + img{
+    height:19ch;
+    width:9cm;
+    position:relative;
+    top:20cm;
+    left:20cm;
+}
+
+#Wrap_Up ~ fieldset{
+    background-color:rgb(206, 206, 243);
+    max-width: 10cm;
+    min-width: 2cm;
+    margin:5cm 5cm 5cm 5cm;
+}
+video{
+    position:absolute;
+    left:3cm;
+    top:35cm;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}
+/*centering the choice boxex*/
+.choice{
+    width:100px;
+    height:100px;
+    margin:auto;
+    flex-grow: 1;
+}
+.img1{
+    grid-area:main;
+}
+.img2{
+    grid-area: sidebar;
+}
+.img3{
+    grid-area:footer;
+}
+.parent{
+    display:grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header"
+    "main sidebar"
+    "footer footer";
+}
+*{
+    color:hsl(60,38%,40%);
+}
+
+
+
+@media (width:360px){
+    h2{
+        background-color: antiquewhite;
+    }
+}
+@media (min-width:35rem){
+    h2{
+        background-color: rgb(230, 162, 238);
+    }
+}
+@media (max-width:50rem){
+    h2{
+        background-color: blue;
+    }
+}
+
