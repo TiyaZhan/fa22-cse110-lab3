@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>Meeting Minutes #1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href = "stylesheet.css">
     <link rel="icon" type="image/png" href="./download.png">
+
+    <style>
+        h1{
+            color:aquamarine;
+        }
+    </style>
   </head>
   <body>
     <header>
@@ -65,8 +75,8 @@
                 The main issue left are problem with <strong>database</strong>. <em>Need to contact the other server as soon as possible.</em>
                 The code to use is <i>Harry Potter</i>.
             </p>
-            <hr>
-            <p>We talked about the possible theme that we might use for this project. 
+
+            <p class = "theme">We talked about the possible theme that we might use for this project. 
                 Below shows the possible theme that we discussed and the one <b class="term">finally selected</b>  by us.
             </p>
 
@@ -102,12 +112,29 @@
                
             </audio>
         </section>
+        <section class = "parent">
+            <img class = "img1"
+            src="https://images.unsplash.com/photo-1611915387288-fd8d2f5f928b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2526&q=80"
+            alt="cat"
+            width="250"
+            />
+            <img class = "img2"
+            src="https://images.unsplash.com/photo-1611915387288-fd8d2f5f928b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2526&q=80"
+            alt="cat"
+            width="250"
+            />
+            <img class = "img3"
+            src="https://images.unsplash.com/photo-1611915387288-fd8d2f5f928b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2526&q=80"
+            alt="cat"
+            width="250"
+            />
+        </section>
     </main>
 
-    <footer>
+    <footer class = "container">
         <h2 id="Others">Others</h2>
         <p>Let's set the things that you want to discuss next time in the box below</p>
-        <form>
+        <form class = "choice">
             <input type="text" list = "possible-topic" placeholder="Enter Possible Topics" />
             <datalist id = "possible-topic">
                 <option>HTML</option>
@@ -117,8 +144,8 @@
             <button>Submit</button>
         </form>
         <hr>
-        <p>Let's set up the next meeting time</p>
-        <form>
+        <p style = "color:grey;">Let's set up the next meeting time</p>
+        <form class = "choice">
             <input type="date"  />
             <button>Submit</button>
         </form>
@@ -131,7 +158,7 @@
         </select>
         <hr>
         <p>If you have any question or concern, Enter in the below boxes</p>
-       <form>
+       <form class = "choice"> 
             <textarea>
                 Enter your question here...
             </textarea>
